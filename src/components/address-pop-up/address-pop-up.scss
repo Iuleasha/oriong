@@ -1,0 +1,145 @@
+@import "../../mixin/mixin";
+
+.pop-up__container {
+  @include formFieldset();
+  padding: 20px;
+  margin: 0 auto 10px auto;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.pop-up__close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    background-color: $white;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.pop-up__information {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.pop-up__information p {
+  margin-bottom: 0;
+}
+
+.pop-up__text-title {
+  margin-right: 20px;
+  width: 70px;
+}
+
+.pop-up__title {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+
+  &-form {
+    margin-bottom: 25px;
+  }
+}
+
+.pop-up__text {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.pop-up__icons {
+  display: flex;
+}
+
+.pop-up__information--socials {
+  align-items: flex-end;
+}
+
+.pop-up__icons-social {
+  margin-right: 10px;
+  fill: $white;
+}
+
+@media (min-width: $tabletWidth) {
+  .pop-up {
+    width: 50%;
+  }
+
+  .pop-up__container {
+    width: 90%;
+    text-align: left;
+    font-size: 12px;
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .pop-up__title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .pop-up__container {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pop-up__title {
+    margin: 0 0 20px 0;
+
+    &-form {
+      margin-bottom: 45px;
+    }
+  }
+
+  .pop-up__text-title {
+    width: 126px;
+    margin-right: 21px;
+    @include desktopFontSize();
+    line-height: 22px;
+  }
+  .pop-up__text {
+    @include desktopFontSize();
+    line-height: 22px;
+    margin: 10px 0;
+  }
+  .pop-up__icons-social {
+    margin-right: 15px;
+
+    & svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

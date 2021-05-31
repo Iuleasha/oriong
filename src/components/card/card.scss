@@ -1,0 +1,122 @@
+@import "../../variables/variables";
+@import "../../mixin/mixin";
+.card__item {
+  border: 1px solid #babdbe;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #e9eef2;
+}
+
+.card__img-wrapper {
+  border-bottom: 1px solid #babdbe;
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+}
+
+.card__description {
+  padding: 0 20px;
+
+}
+
+.card__description-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card__description p {
+  color: #616161;
+  margin: 8px 0 0 0;
+  line-height: 16px;
+
+  & b {
+    color: #3a5a80;
+  }
+}
+
+.card__description-standards-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.card__description-standards-img {
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tabletWidth) {
+  .card__item {
+    display: flex;
+    border: 2px solid #babdbe;
+    margin-bottom: 30px;
+  }
+
+  .card__description-title {
+    font-size: 14px;
+  }
+
+  .card__description p {
+    @include tabletFontSize();
+    line-height: 20px;
+  }
+
+  .card__img-wrapper {
+    border-right: 2px solid #babdbe;
+    border-bottom: none;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .card__img {
+    max-width: unset;
+  }
+
+  .card__description-standards-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .card__item {
+    width: 47%;
+    display: block;
+    padding: 15px;
+
+    &:hover {
+      box-shadow: 0 0 10px $promoWrapperText;
+      transition: all .5s ease-out 0s;
+    }
+
+    .card__description-title {
+      font-size: 16px;
+    }
+
+    .card__description p {
+      @include desktopFontSize();
+      line-height: 22px;
+    }
+
+  }
+
+  .card__img-wrapper {
+    border-right: none;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .card__description-standards-wrapper {
+    padding-top: 30px;
+  }
+
+}

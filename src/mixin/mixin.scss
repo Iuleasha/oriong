@@ -1,0 +1,41 @@
+@import "../variables/variables";
+
+@mixin descTopSize {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@mixin tabletSize {
+  max-width: 700px;
+}
+
+@mixin mobileTitleSize {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $promoWrapperText;
+  margin: 0 0 30px 0;
+}
+
+@mixin tabletTitleWidth{
+  font-size: 24px;
+}
+@mixin desktopTitleWidth{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+@mixin desktopFontSize{
+  font-size: 18px;
+}
+@mixin tabletFontSize{
+  font-size: 16px;
+}
+@mixin formFieldset {
+  color: $white;
+  font-family: "Roboto", "Arial", sans-serif;
+  background: linear-gradient(to bottom, #7097b0 0%, #013a62 100%);
+  box-shadow: 0 3px 5px black;
+  transition: all .5s ease-out 0s;
+  border-radius: 5px;
+  text-align: center;
+}

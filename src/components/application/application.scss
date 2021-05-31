@@ -1,0 +1,77 @@
+@import "../../variables/variables";
+@import "../../mixin/mixin";
+.application {
+  padding: 40px 20px;
+  background: #f1f1f1;
+}
+
+.application__title {
+  @include mobileTitleSize();
+}
+
+.application__list {
+  list-style: none;
+  padding: 0;
+}
+
+.application__item {
+  position: relative;
+  border: 1px solid #9d9d9d;
+  border-radius: 8px;
+  background: $white url("./img/success_read_icon.svg") no-repeat center right 10px;
+  background-size: 20px auto;
+  padding: 10px 40px 10px 10px;
+  margin-bottom: 10px;
+  display: none;
+
+  &:nth-child(-n+9) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .application {
+    padding-bottom: 70px;
+  }
+
+  .application__title {
+    @include tabletTitleWidth();
+  }
+
+  .application__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .application__item {
+    font-size: 14px;
+    width: 30%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .application {
+    padding: 70px 0;
+  }
+
+  .application__title {
+    @include desktopTitleWidth();
+  }
+
+  .application__list {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .application__item {
+    height: 50px;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 33%;
+    display: inline-flex;
+  }
+}

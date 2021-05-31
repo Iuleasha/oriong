@@ -1,0 +1,73 @@
+@import "../../variables/variables";
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  font-size: 11px;
+  color: $black;
+  background-color: #eff8fe;
+  background-size: 13px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 3px 5px #4B4A4AFF;
+    border: 2px solid #faf6f1;
+  }
+}
+
+input[type="text"] {
+  background-image: url("../../img/user-icon.svg");
+
+}
+
+input[type="email"] {
+  background-image: url("../../img/mail-icon.svg");
+}
+
+input[type="tel"] {
+  background-image: url("../../img/phone-icon.svg");
+}
+
+input.label-form__item::placeholder {
+  color: $promoWrapperText;
+}
+
+.label-form__item {
+  outline: none;
+  margin-bottom: 10px;
+  height: 31px;
+  padding: 9px 10px 9px 33px;
+  border-bottom: 1px solid #408fb8;
+  border-left: 1px solid #003d7a;
+  border-right: 1px solid #003d7a;
+  border-top: 1px solid #003d7a;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px rgb(0, 0, 0 / 50%);
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: $tabletWidth) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    font-size: 13px;
+    background-size: 13px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  //input[type="text"],
+  //input[type="tel"],
+  //input[type="email"] {
+  //  font-size: 15px;
+  //  background-size: 15px;
+  //}
+  .label-form__item {
+    margin-bottom: 15px;
+    height: 45px;
+  }
+}

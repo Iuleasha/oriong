@@ -1,0 +1,148 @@
+@import "../../variables/variables";
+@import "../../mixin/mixin";
+.why-us__wrapper {
+  padding: 70px 20px;
+  text-align: center;
+  position: relative;
+
+  &:after,
+  &:before {
+    content: "";
+    clear: both;
+    display: block;
+    position: absolute;
+    background: url(./img/shadow.png) 50% 0 no-repeat;
+    height: 16px;
+    left: 0;
+    right: 0;
+  }
+
+  &:after {
+    bottom: -16px;
+  }
+
+  &:before {
+    top: 35px;
+  }
+}
+
+.why-us__wrapper-title {
+  @include mobileTitleSize();
+}
+
+.why-us__description {
+  padding: 20px;
+}
+
+.why-us__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.why-us__item {
+  border: 1px solid #D2D3D4FF;
+  box-shadow: 0 0 5px #D2D3D4FF;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  @media (hover: hover) and (pointer: fine) {
+
+    &:hover {
+      box-shadow: 0 0 10px $promoWrapperText;
+      transition: all .5s ease-out 0s;
+
+      .why-us__img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.why-us__img-wrapper {
+  border-bottom: 1px solid #babdbe;
+  background: #e9eef2;
+  text-align: center;
+  overflow: hidden;
+}
+
+.why-us__img {
+  background-color: #f2f6f9;
+  transition: transform 0.3s;
+}
+
+.why-us__title {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.why-us__text {
+  color: #616161;
+  margin: 0;
+}
+
+@media (min-width: $tabletWidth) {
+
+  .why-us__wrapper {
+    padding: 100px 0;
+    margin: 0 auto;
+
+    &:before {
+      top: 60px;
+    }
+  }
+
+  .why-us__wrapper-title {
+    @include tabletTitleWidth();
+  }
+
+  .why-us {
+    margin: auto;
+    @include tabletSize();
+  }
+
+  .why-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .why-us__item {
+    width: 47%;
+    margin-bottom: 40px;
+  }
+
+  .why-us__title {
+    font-size: 14px;
+  }
+
+  .why-us__text {
+    @include tabletFontSize();
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .why-us__wrapper-title {
+    @include desktopTitleWidth();
+  }
+
+  .why-us {
+    max-width: $desktopWidth;
+  }
+
+  .why-us__item {
+    width: 32%;
+    margin-bottom: 25px;
+  }
+
+
+  .why-us__title {
+    font-size: 16px;
+  }
+
+  .why-us__text {
+    @include desktopFontSize();
+  }
+}

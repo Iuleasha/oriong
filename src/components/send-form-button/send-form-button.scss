@@ -1,0 +1,35 @@
+@import "../../variables/variables";
+
+.send-form__button {
+  font-family: "WorkSans", "Arial", sans-serif;
+  font-size: 10px;
+  padding: 10px;
+  margin: 20px auto 0;
+  color: $white;
+  text-transform: uppercase;
+  display: block;
+  background: linear-gradient(to bottom, $promoWrapperTitle 0%, #2f5e7d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a95ff', endColorstr='#0160be', GradientType=0);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0 / 50%);
+  width: 80%;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .send-form__button {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .send-form__button {
+    font-size: 14px;
+    padding: 15px;
+    margin: 20px auto 0;
+  }
+}

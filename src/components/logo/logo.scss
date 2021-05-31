@@ -1,0 +1,26 @@
+@import "../../variables/variables";
+
+.logo {
+    margin-right: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+
+.logo__image {
+    width: 160px;
+    text-align: center;
+}
+
+@media (min-width: $tabletWidth) {
+    .logo__image {
+        width: 170px;
+    }
+}
+
+@media (min-width: $desktopWidth) {
+
+    .logo__style{
+        width: 200px;
+    }
+}

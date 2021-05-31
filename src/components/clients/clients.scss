@@ -1,0 +1,35 @@
+@import "../../variables/variables";
+@import "../../mixin/mixin";
+.clients {
+  margin: 0 auto;
+  padding: 40px 0 70px 0;
+}
+
+.clients__img-wrapper {
+  margin: 20px 10px;}
+
+.clients__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.clients__title {
+  @include mobileTitleSize();
+}
+
+@media (min-width: 768px) {
+  .clients__title {
+    @include tabletTitleWidth();
+  }
+}
+@media (min-width: $desktopWidth) {
+  .clients {
+    max-width: 1024px;
+    width: calc(100% - 100px);
+    padding: 70px 0;
+  }
+
+  .clients__title{
+    @include desktopTitleWidth();
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../variables/variables";
+@import "../../mixin/mixin";
+
+.form__wrapper-description{
+  @include formFieldset();
+  padding: 20px;
+  width: 100%;
+}
+
+.form__wrapper-tittle {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 256px;
+}
+
+.form__wrapper-text {
+  margin: 0 0 22px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+@media (min-width: $tabletWidth) {
+  .form__wrapper-tittle {
+    font-size: 22px;
+  }
+
+  .form__wrapper-description {
+    width: 50%;
+  }
+
+  .form__wrapper-text {
+    @include tabletFontSize();
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__wrapper-text {
+    font-size: 19px;
+  }
+
+}

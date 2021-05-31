@@ -1,0 +1,94 @@
+@import "../../variables/variables";
+@import "../../mixin/mixin";
+
+.promo__wrapper {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  z-index: 1;
+}
+
+.promo__wrapper-percent {
+  color: $white;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.promo__wrapper-title {
+  color: $promoWrapperTitle;
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.promo__wrapper-sale {
+  font-family: "WorkSans", "Arial", sans-serif;
+  font-size: 62px;
+}
+
+.promo__wrapper-em {
+  font-size: 40px;
+}
+
+.promo__wrapper-text {
+  background-color: $promoWrapperTitle;
+  border-radius: 5px;
+  padding: 10px;
+  color: $promoWrapperText;
+  max-width: 300px;
+  margin: 15px auto;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tabletWidth) {
+
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: unset;
+    @include tabletSize();
+
+  }
+
+  .promo__wrapper-percent {
+    width: 60%;
+    text-align: start;
+    padding: 55px 0;
+    margin: 0 auto;
+  }
+
+  .promo__wrapper-text {
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .promo__wrapper {
+    @include descTopSize;
+    padding: 45px 0;
+    flex-direction: unset;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+
+  .promo__wrapper-title {
+    font-size: 35px;
+  }
+
+  .promo__wrapper-sale {
+    font-size: 70px;
+  }
+
+  .promo__wrapper-text {
+    font-size: 23px;
+    max-width: 80%;
+  }
+  .promo__wrapper-em {
+    font-size: 48px;
+  }
+}
+
