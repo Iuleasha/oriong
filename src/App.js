@@ -1,11 +1,10 @@
-import "./App.scss";
-import Header from "./components/header/header";
-import WhyUs from "./components/why-us/why-us";
-import Assortment from "./components/assortiment/assortiment";
-import OurProcess from "./components/our-process/our-process";
-import Clients from "./components/clients/clients";
 import Application from "./components/application/application";
+import Assortment from "./components/assortiment/assortiment";
+import Clients from "./components/clients/clients";
 import Contacts from "./components/contacts/contacts";
+import Header from "./components/header/header";
+import OurProcess from "./components/our-process/our-process";
+import WhyUs from "./components/why-us/why-us";
 
 function App() {
   return (

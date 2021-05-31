@@ -1,8 +1,9 @@
 import "./card.scss";
+import {uniqueId} from '../../utils/utils';
 
 function Card({ card }) {
   return (
-    <div className="card__item">
+    <div className="card__item" key={uniqueId()}>
       <div className="card__img-wrapper">
         <img
           className="card__img"
@@ -60,7 +61,7 @@ function Card({ card }) {
         </p>
         <div className="card__description-standards-wrapper">
           {card.standardsImg.map((item) => (
-            <div className="card__description-standards-img">
+            <div className="card__description-standards-img" key={uniqueId()}>
               <img
                 className="card__description-img"
                 src={item}

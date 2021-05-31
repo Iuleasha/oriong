@@ -15,6 +15,7 @@ function Contacts() {
           height="450"
           allowFullScreen=""
           loading="lazy"
+          title="Наш адрес"
         />
       </div>
     </section>

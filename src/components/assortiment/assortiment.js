@@ -130,7 +130,6 @@ export const cardsInsulated = [
 ];
 
 function Assortment() {
-  console.log(cardsNitril);
   return (
     <section className="assortment" id="assort">
       <h2 className="assortment__title-wrapper">Ассортимент</h2>

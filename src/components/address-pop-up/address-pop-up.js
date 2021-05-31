@@ -1,7 +1,7 @@
-import SendForm from "../send-form-button/send-form-button";
-import "./address-pop-up.scss";
 import { useState } from "react";
 import Form from "../form/form";
+import SendForm from "../send-form-button/send-form-button";
+import "./address-pop-up.scss";
 
 function AddressPoUp() {
   const [showFormStatus, showForm] = useState(false);
@@ -87,7 +87,7 @@ function AddressPoUp() {
                 >
                   <svg
                     id="Bold"
-                    enable-background="new 0 0 24 24"
+                    enableBackground="new 0 0 24 24"
                     height="20px"
                     viewBox="0 0 24 24"
                     width="20px"

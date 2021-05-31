@@ -1,7 +1,6 @@
 import { uniqueId } from "../../utils/utils";
-import "./navigation.scss";
 import "../../visually-hidden/visually-hidden.scss";
-import Logo from "../logo/logo";
+import "./navigation.scss";
 
 const navigation = [
   {
@@ -47,7 +46,6 @@ function Navigation() {
           <li key={uniqueId()} className="nav__item">
             <a
               className="nav__list-link"
-              activeClassName="nav__list-link--active"
               aria-label={item.text}
               href={item.id}
             >

@@ -1,4 +1,5 @@
 import "./our-process.scss";
+import {uniqueId} from '../../utils/utils';
 
 const ourProjectObject = [
   {
@@ -26,10 +27,8 @@ function OurProcess() {
         <h2 className="our-process__title">Как мы работаем</h2>
         <ul className="our-process__list">
           {ourProjectObject.map((item, index) => (
-            <li className="our-process__item">
-              <div
-                className={`our-process__img our-process__img--${index}`}
-              ></div>
+            <li className="our-process__item" key={uniqueId()}>
+              <div className={`our-process__img our-process__img--${index}`} />>
               {item.text}
             </li>
           ))}

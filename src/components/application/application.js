@@ -1,4 +1,5 @@
 import "./application.scss";
+import {uniqueId} from '../../utils/utils';
 const applicationsArea = [
   {
     area: "Атомная промышленность",
@@ -83,7 +84,7 @@ function Application() {
       <h2 className="application__title">Области применения продукции</h2>
       <ul className="application__list">
         {applicationsArea.map((item) => (
-          <li className="application__item">{item.area}</li>
+          <li className="application__item" key={uniqueId()}>{item.area}</li>
         ))}
       </ul>
     </section>
