@@ -92,6 +92,7 @@ function Form() {
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
+        <span className="label-form__name" />
       </label>
 
       <label className="form__wrapper-label ">
@@ -105,6 +106,7 @@ function Form() {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
+        <span className="label-form__email" />
       </label>
 
       <label className="form__wrapper-label">
@@ -114,10 +116,12 @@ function Form() {
           name="tel"
           pattern="^[0-9-+\s()]*$"
           placeholder="Мобильный телефон"
+          placeholder="+7 ХХХ ХХХ ХХ ХХ"
           type="tel"
           onChange={(e) => setTel(e.target.value)}
           value={tel}
         />
+        <span className="label-form__phone" />
       </label>
       <SendForm clickHandler={submitFormHandler} disabled={loading} />
     </form>

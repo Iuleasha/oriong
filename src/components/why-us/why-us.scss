@@ -41,34 +41,24 @@
 }
 
 .why-us__item {
-  border: 1px solid #D2D3D4FF;
-  box-shadow: 0 0 5px #D2D3D4FF;
+  border: 1px solid $whyUsBorder;
+  box-shadow: 0 0 5px $whyUsBorder;
   border-radius: 4px;
   text-align: center;
   margin-bottom: 20px;
   width: 100%;
-  @media (hover: hover) and (pointer: fine) {
 
-    &:hover {
-      box-shadow: 0 0 10px $promoWrapperText;
-      transition: all .5s ease-out 0s;
-
-      .why-us__img {
-        transform: scale(1.1);
-      }
-    }
-  }
 }
 
 .why-us__img-wrapper {
-  border-bottom: 1px solid #babdbe;
-  background: #e9eef2;
+  border-bottom: 1px solid $cardBorder;
+  background: $cardBackground;
   text-align: center;
   overflow: hidden;
 }
 
 .why-us__img {
-  background-color: #f2f6f9;
+  background-color: $whyUsBcImg;
   transition: transform 0.3s;
 }
 
@@ -79,7 +69,7 @@
 }
 
 .why-us__text {
-  color: #616161;
+  color: $cardDescription;
   margin: 0;
 }
 
@@ -135,6 +125,15 @@
   .why-us__item {
     width: 32%;
     margin-bottom: 25px;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        @include itemHover();
+
+        .why-us__img {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 
 

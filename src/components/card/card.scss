@@ -1,14 +1,14 @@
 @import "../../variables/variables";
 @import "../../mixin/mixin";
 .card__item {
-  border: 1px solid #babdbe;
+  border: 1px solid $cardBorder;
   border-radius: 5px;
   margin-bottom: 20px;
-  background: #e9eef2;
+  background: $cardBackground;
 }
 
 .card__img-wrapper {
-  border-bottom: 1px solid #babdbe;
+  border-bottom: 1px solid $cardBorder;
   display: flex;
   justify-content: center;
   background-color: $white;
@@ -27,12 +27,12 @@
 }
 
 .card__description p {
-  color: #616161;
+  color: $cardDescription;
   margin: 8px 0 0 0;
   line-height: 16px;
 
   & b {
-    color: #3a5a80;
+    color: $promoWrapperText;
   }
 }
 
@@ -50,7 +50,7 @@
 @media (min-width: $tabletWidth) {
   .card__item {
     display: flex;
-    border: 2px solid #babdbe;
+    border: 2px solid $cardBorder;
     margin-bottom: 30px;
   }
 
@@ -64,7 +64,7 @@
   }
 
   .card__img-wrapper {
-    border-right: 2px solid #babdbe;
+    border-right: 2px solid $cardBorder;
     border-bottom: none;
     align-items: center;
     padding-right: 20px;
@@ -94,8 +94,7 @@
     padding: 15px;
 
     &:hover {
-      box-shadow: 0 0 10px $promoWrapperText;
-      transition: all .5s ease-out 0s;
+      @include itemHover();
     }
 
     .card__description-title {

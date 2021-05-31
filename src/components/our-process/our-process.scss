@@ -42,8 +42,8 @@ color: $white;
 }
 
 .our-process__item {
-  background: linear-gradient(to bottom, #535353 0%, #2f5e7d 100%);
-  border: 2px solid #9d9d9d;
+  background: linear-gradient(to bottom, $ourProcessBc1 0%, $ourProcessBc2 100%);
+  border: 2px solid $border;
   border-radius: 5px;
   text-align: center;
   margin-bottom: 10px;

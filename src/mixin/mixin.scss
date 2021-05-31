@@ -20,16 +20,25 @@
 @mixin tabletTitleWidth{
   font-size: 24px;
 }
+
 @mixin desktopTitleWidth{
   font-size: 40px;
   margin-bottom: 40px;
 }
+
 @mixin desktopFontSize{
   font-size: 18px;
 }
+
 @mixin tabletFontSize{
   font-size: 16px;
 }
+
+@mixin itemHover{
+  box-shadow: 0 0 10px $promoWrapperText;
+  transition: all .5s ease-out 0s;
+}
+
 @mixin formFieldset {
   color: $white;
   font-family: "Roboto", "Arial", sans-serif;
