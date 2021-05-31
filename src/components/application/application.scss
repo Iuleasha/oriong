@@ -2,7 +2,7 @@
 @import "../../mixin/mixin";
 .application {
   padding: 40px 20px;
-  background: #f1f1f1;
+  background: $applicationBackground;
 }
 
 .application__title {
@@ -16,7 +16,7 @@
 
 .application__item {
   position: relative;
-  border: 1px solid #9d9d9d;
+  border: 1px solid $border;
   border-radius: 8px;
   background: $white url("./img/success_read_icon.svg") no-repeat center right 10px;
   background-size: 20px auto;

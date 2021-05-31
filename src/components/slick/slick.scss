@@ -1,21 +1,16 @@
+@import "../../variables/variables";
 .slick-track {
   display: flex;
   align-items: center;
-  //margin-bottom: 20px;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: #3a5a80;
+  color: $promoWrapperText;
   width: 20px;
   height: 20px;
 }
 .slick-dots li button:before{
-  color: #3a5a80;
-
+  color: $promoWrapperText;
 }
-
-//.slick-dots li.slick-active button:before{
-//
-//}
 

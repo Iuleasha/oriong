@@ -13,6 +13,7 @@ function Form() {
           required
           type="text"
         />
+        <span className="label-form__name" />
       </label>
 
       <label className="form__wrapper-label ">
@@ -24,6 +25,7 @@ function Form() {
           required
           type="email"
         />
+        <span className="label-form__email" />
       </label>
 
       <label className="form__wrapper-label">
@@ -32,10 +34,12 @@ function Form() {
           className="label-form__item"
           name="tel"
           pattern="^[0-9-+\s()]*$"
-          placeholder="Мобильный телефон"
+          placeholder="+7 ХХХ ХХХ ХХ ХХ"
+          // placeholder="Мобильный телефон"
           required
           type="tel"
         />
+        <span className="label-form__phone" />
       </label>
       <SendForm />
     </form>

@@ -121,11 +121,13 @@
     @include desktopFontSize();
     line-height: 22px;
   }
+
   .pop-up__text {
     @include desktopFontSize();
     line-height: 22px;
     margin: 10px 0;
   }
+
   .pop-up__icons-social {
     margin-right: 15px;
 
