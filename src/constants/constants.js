@@ -6,9 +6,9 @@ import art790 from "../img/products/790-pvh-moroz-udlin-rezinka.png";
 import standardEn4441 from "../img/standarts/EN4441.PNG";
 import standardEn4342 from "../img/standarts/EN4342.PNG";
 import standardEn511 from "../img/standarts/EN511.PNG";
-import standardEac from "../img/standarts/EAC.PNG";
-import standardI from "../img/standarts/I.PNG";
-import standardCe from "../img/standarts/CE-catII.PNG";
+import standardEac from "../img/standarts/EAC.svg";
+import standardI from "../img/standarts/I.svg";
+import standardCe from "../img/standarts/CE-catII.svg";
 import standardAJKL from "../img/standarts/ISO-AJKL.PNG";
 import standardAkl from "../img/standarts/ISO-AKL.PNG";
 
