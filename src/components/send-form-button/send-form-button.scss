@@ -14,9 +14,15 @@
   border-radius: 5px;
   box-shadow: 0 3px 5px rgb(0, 0, 0 / 50%);
   width: 80%;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.02);
+  }
+  &:disabled{
+    pointer-events: none;
+    background: $border;
+    opacity: 0.6;
   }
 }
 

@@ -1,23 +1,8 @@
 @import "../../variables/variables";
 
-.form__wrapper-label{
+.form__wrapper-label {
   position: relative;
   display: block;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  font-size: 11px;
-  color: $black;
-  background-color: $inputBackground;
-
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: 0 3px 5px $boxShadow;
-    border: 2px solid $inputBorder;
-  }
 }
 
 .label-form__name,
@@ -30,10 +15,11 @@ input[type="email"] {
   width: 13px;
   height: 13px;
   left: 11px;
-  top: 16px;
+  top: 10px;
 }
+
 .label-form__name {
- background-image: url("../../img/user-icon.svg");
+  background-image: url("../../img/user-icon.svg");
 }
 
 .label-form__email {
@@ -61,12 +47,24 @@ input.label-form__item::placeholder {
   box-shadow: inset 1px 1px 1px rgb(0, 0, 0 / 50%);
   display: block;
   width: 100%;
+  font-size: 11px;
+  color: $black;
+  background-color: $inputBackground;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 3px 5px $boxShadow;
+    border: 2px solid $inputBorder;
+  }
+}
+
+.label-form__notice {
+  text-align: left;
 }
 
 @media (min-width: $tabletWidth) {
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"] {
+  .label-form__item {
     font-size: 13px;
     background-size: 13px;
   }
@@ -76,5 +74,11 @@ input.label-form__item::placeholder {
   .label-form__item {
     margin-bottom: 15px;
     height: 45px;
+  }
+
+  .label-form__name,
+  .label-form__email,
+  .label-form__phone {
+    top: 16px;
   }
 }

@@ -25,7 +25,9 @@ function AddressPoUp() {
             <h3 className="pop-up__title">ООО «Орион Групп»</h3>
             <div className="pop-up__information">
               <p className="pop-up__text-title">
-                Юридический/фактический адрес:
+                Юридический/
+                <br />
+                фактический адрес:
               </p>
               <p className="pop-up__text">
                 109431, г. Москва, ул. Привольная, дом 70, корпус 1, этаж 2,
