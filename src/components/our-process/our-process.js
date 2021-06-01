@@ -1,5 +1,5 @@
 import "./our-process.scss";
-import {uniqueId} from '../../utils/utils';
+import { uniqueId } from "../../utils/utils";
 
 const ourProjectObject = [
   {
@@ -28,7 +28,7 @@ function OurProcess() {
         <ul className="our-process__list">
           {ourProjectObject.map((item, index) => (
             <li className="our-process__item" key={uniqueId()}>
-              <div className={`our-process__img our-process__img--${index}`} />>
+              <div className={`our-process__img our-process__img--${index}`} />
               {item.text}
             </li>
           ))}

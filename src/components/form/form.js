@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import SendForm from "../send-form-button/send-form-button";
 import "./form.scss";
+import Notification from "../notification/notification";
+import { validateEmail } from "../../utils/utils";
 
 const SITE_KEY = "6Ld-EwIbAAAAAGXhZ5joUhqshNZ_BjlCh3rEp_bm";
 
@@ -9,10 +11,23 @@ function Form() {
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
   const [loading, setLoading] = useState(false);
-  const [response, setResponse] = useState(null);
+  const [isDone, setDone] = useState(false);
+  const [isEmailValid, setValidation] = useState(true);
 
   const submitFormHandler = (e) => {
     e.preventDefault();
+
+    if (name.length === 0 || email.length === 0) {
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      setValidation(false);
+
+      return;
+    }
+
+    setLoading(true);
 
     window.grecaptcha.ready(() => {
       window.grecaptcha
@@ -25,7 +40,6 @@ function Form() {
   };
 
   const submitData = (token) => {
-    console.log(token);
     fetch("/api.php", {
       method: "POST",
       headers: {
@@ -40,11 +54,26 @@ function Form() {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         setLoading(false);
-        setResponse(res);
-        console.log(response);
+        if (res.success) {
+          setEmail("");
+          setName("");
+          setTel("");
+          setDone(true);
+          setTimeout(() => {
+            setDone(false);
+            setLoading(false);
+          }, 3000);
+        }
       });
+  };
+
+  const changeEmail = (value) => {
+    setEmail(value);
+
+    if (validateEmail(value) && !isEmailValid) {
+      setValidation(true);
+    }
   };
 
   useEffect(() => {
@@ -73,9 +102,7 @@ function Form() {
     loadScriptByURL(
       "recaptcha-key",
       `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`,
-      function () {
-        console.log("Script loaded!");
-      }
+      function () {}
     );
   }, []);
 
@@ -86,7 +113,7 @@ function Form() {
         <input
           className="label-form__item"
           name="firstname"
-          placeholder="Имя"
+          placeholder="Имя *"
           required
           type="text"
           onChange={(e) => setName(e.target.value)}
@@ -100,10 +127,10 @@ function Form() {
         <input
           className="label-form__item"
           name="email"
-          placeholder="Ваш Email"
+          placeholder="Ваш Email *"
           required
           type="email"
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => changeEmail(e.target.value)}
           value={email}
         />
         <span className="label-form__email" />
@@ -115,7 +142,6 @@ function Form() {
           className="label-form__item"
           name="tel"
           pattern="^[0-9-+\s()]*$"
-          placeholder="Мобильный телефон"
           placeholder="+7 ХХХ ХХХ ХХ ХХ"
           type="tel"
           onChange={(e) => setTel(e.target.value)}
@@ -123,7 +149,15 @@ function Form() {
         />
         <span className="label-form__phone" />
       </label>
-      <SendForm clickHandler={submitFormHandler} disabled={loading} />
+      <p className="label-form__notice">* - Обязательные поля</p>
+      <SendForm
+        clickHandler={submitFormHandler}
+        disabled={loading || name.length === 0 || email.length === 0}
+      />
+      {isDone && <Notification />}
+      {!isEmailValid && (
+        <Notification status="error" text="Введите корректный Email" />
+      )}
     </form>
   );
 }

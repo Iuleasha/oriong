@@ -1,0 +1,26 @@
+.form__notification {
+  width: 250px;
+  padding: 15px;
+  background-color: #faf6f1;
+  border-radius: 5px;
+  border: 1px solid;
+  border-left: 15px solid;
+  text-transform: uppercase;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+}
+
+.done {
+  color: #258711ff;
+  border-color: #76db61;
+}
+
+.error {
+  border-color: red;
+  color: red;
+}
+
+.form__notification-text {
+  margin: 0;
+}
