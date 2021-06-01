@@ -10,11 +10,11 @@
 		<g stroke="null">
 			<g stroke="null"  >
 				<g stroke="null" id="svg_2" clip-path="url(#clip-path)">
-					<path stroke="null" id="svg_3" fill="#000000" d="m37.8,26.93l0,-4.08a9.44,9.44 0 0 1 -10.58,-7.33l7.88,0l0,-4l-7.88,0a9.47,9.47 0 0 1 10.58,-7.37l0,-4.08a13.5,13.5 0 1 0 -1.35,26.93c0.46,0 0.91,0 1.35,-0.07"/>
-					<path stroke="null" id="svg_4" fill="#000000" d="m0,13.5a13.5,13.5 0 0 0 13.5,13.5a13.15,13.15 0 0 0 1.44,-0.08l0,-4.08a9.45,9.45 0 1 1 0,-18.68l0,-4.08a13.67,13.67 0 0 0 -1.44,-0.08a13.5,13.5 0 0 0 -13.5,13.5"/>
+					<path stroke="null" id="svg_3" fill="#272525" d="m37.8,26.93l0,-4.08a9.44,9.44 0 0 1 -10.58,-7.33l7.88,0l0,-4l-7.88,0a9.47,9.47 0 0 1 10.58,-7.37l0,-4.08a13.5,13.5 0 1 0 -1.35,26.93c0.46,0 0.91,0 1.35,-0.07"/>
+					<path stroke="null" id="svg_4" fill="#272525" d="m0,13.5a13.5,13.5 0 0 0 13.5,13.5a13.15,13.15 0 0 0 1.44,-0.08l0,-4.08a9.45,9.45 0 1 1 0,-18.68l0,-4.08a13.67,13.67 0 0 0 -1.44,-0.08a13.5,13.5 0 0 0 -13.5,13.5"/>
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 0.859078 0 4.29372)" stroke="#000" font-weight="bold" stroke-width="0" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="8" id="svg_5" y="36.25033" x="7.28713" fill="#000000">CAT. II</text>
+		<text transform="matrix(1 0 0 0.859078 0 4.29372)" stroke="#272525" font-weight="bold" font-family="sans-serif" stroke-width="0" font-size="8" id="svg_5" y="36.25033" x="7.28713" fill="#272525">CAT. II</text>
 	</g>
 </svg>
