@@ -51,14 +51,7 @@ function Card({ card }) {
             {card.weight}
           </p>
         )}
-        <p className="card__description-certificate">
-          <b>ТР ТС:</b>
-          {card.certificate}
-        </p>
-        <p className="card__description-standard">
-          <b>ГОСТ Р ЕН:</b>
-          {card.standard}
-        </p>
+        <p className="card__description-certificate">{card.certificate}</p>
         <div className="card__description-standards-wrapper">
           {card.standardsImg.map((item) => (
             <div className="card__description-standards-img" key={uniqueId()}>

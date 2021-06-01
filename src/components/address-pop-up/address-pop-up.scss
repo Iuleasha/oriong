@@ -14,7 +14,8 @@
   height: 24px;
   position: absolute;
   top: 25px;
-  right: 0;
+  right: 20px;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -143,5 +144,9 @@
     &:active {
       opacity: 0.5;
     }
+  }
+
+  .pop-up__close {
+    right: 0;
   }
 }

@@ -28,8 +28,8 @@ export const cardsNitril = [
     lgth: " 270-290 мм",
     safety: " Ми Мп Нс Нм Нт Вн К80 Щ50",
     weight: " 135,00 гр",
-    certificate: " 019/2011, ГОСТ 12.4.252-2013, EN 388:2003",
-    standard: " 1149-5:2008",
+    certificate:
+      "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003, ГОСТ Р ЕН 1149-5:2008",
     standardsImg: [
       standardEn4441,
       standardAkl,
@@ -49,8 +49,8 @@ export const cardsNitril = [
     lgth: " 270-290 мм",
     safety: " Ми Мп Нс Нм Нт Вн К80 Щ50",
     weight: " 130,00 гр",
-    certificate: " 019/2011, ГОСТ 12.4.252-2013, EN 388:2003",
-    standard: " 1149-5:2008",
+    certificate:
+      "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003, ГОСТ Р ЕН 1149-5:2008",
     standardsImg: [
       standardEn4441,
       standardAkl,
@@ -72,8 +72,8 @@ export const cardsInsulated = [
     material: " морозостойкий ПВХ",
     size: " 11",
     safety: " Ми Мп Нм Нс Нм Нт Вн Тн К80 Щ50",
-    certificate: " 019/2011, ГОСТ 12.4.252-2013",
-    standard: " 1149-5:2008",
+    certificate:
+      "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003-4342, EN 511:2012-221, ГОСТ Р ЕН 1149-5:2008",
     standardsImg: [
       standardEn4342,
       standardEn511,
@@ -94,8 +94,8 @@ export const cardsInsulated = [
     material: " морозостойкий ПВХ",
     size: " 11",
     safety: "  Ми Мп Нм Нс Нм Нт Вн Тн К80 Щ50",
-    certificate: " 019/2011, ГОСТ 12.4.252-2013",
-    standard: " 1149-5:2008",
+    certificate:
+      "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003-4342, EN 511:2012-221, ГОСТ Р ЕН 1149-5:2008",
     standardsImg: [
       standardEn4342,
       standardEn511,
@@ -116,8 +116,8 @@ export const cardsInsulated = [
     material: " морозостойкий ПВХ",
     size: " 11",
     safety: " Ми Мп Нм Нс Нм Нт Вн Тн К80 Щ50",
-    certificate: " 019/2011, ГОСТ 12.4.252-2013",
-    standard: " 1149-5:2008",
+    certificate:
+      "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003-4342, EN 511:2012-221, ГОСТ Р ЕН 1149-5:2008",
     standardsImg: [
       standardEn4342,
       standardEn511,

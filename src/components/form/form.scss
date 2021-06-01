@@ -12,10 +12,12 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
-  width: 13px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
   left: 11px;
-  top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
 }
 
 .label-form__name {
@@ -37,7 +39,7 @@ input.label-form__item::placeholder {
 .label-form__item {
   outline: none;
   margin-bottom: 10px;
-  height: 31px;
+  height: 40px;
   padding: 9px 10px 9px 33px;
   border-bottom: 1px solid $borderBottomLabel;
   border-left: 1px solid $borderLabel;
@@ -47,7 +49,7 @@ input.label-form__item::placeholder {
   box-shadow: inset 1px 1px 1px rgb(0, 0, 0 / 50%);
   display: block;
   width: 100%;
-  font-size: 11px;
+  font-size: 16px;
   color: $black;
   background-color: $inputBackground;
 
@@ -63,22 +65,9 @@ input.label-form__item::placeholder {
   text-align: left;
 }
 
-@media (min-width: $tabletWidth) {
-  .label-form__item {
-    font-size: 13px;
-    background-size: 13px;
-  }
-}
-
 @media (min-width: $desktopWidth) {
   .label-form__item {
     margin-bottom: 15px;
     height: 45px;
-  }
-
-  .label-form__name,
-  .label-form__email,
-  .label-form__phone {
-    top: 16px;
   }
 }
