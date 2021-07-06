@@ -56,6 +56,7 @@ function AddressPoUp() {
                 <a
                   className="pop-up__icons-social"
                   href="https://api.whatsapp.com/send?phone=79917039870"
+                  aria-label="WhatsApp"
                 >
                   <svg
                     height="20px"
@@ -71,6 +72,7 @@ function AddressPoUp() {
                 <a
                   className="pop-up__icons-social"
                   href="https://instagram.com/orion.gloves?r=nametag"
+                  aria-label="Instagram"
                 >
                   <svg
                     height="20px"
@@ -86,6 +88,7 @@ function AddressPoUp() {
                 <a
                   className="pop-up__icons-social"
                   href="https://telegram.me/oriongloves"
+                  aria-label="Telegram"
                 >
                   <svg
                     id="Bold"

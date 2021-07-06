@@ -27,7 +27,7 @@ export const cardsNitril = [
     size: " 11",
     lgth: " 270-290 мм",
     safety: " Ми Мп Нс Нм Нт Вн К80 Щ50",
-    weight: " 135,00 гр",
+    weight: " 120-125 гр",
     certificate:
       "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003, ГОСТ Р ЕН 1149-5:2008",
     standardsImg: [
@@ -48,7 +48,7 @@ export const cardsNitril = [
     size: " 11",
     lgth: " 270-290 мм",
     safety: " Ми Мп Нс Нм Нт Вн К80 Щ50",
-    weight: " 130,00 гр",
+    weight: " 120,00 гр",
     certificate:
       "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003, ГОСТ Р ЕН 1149-5:2008",
     standardsImg: [
@@ -115,6 +115,7 @@ export const cardsInsulated = [
     lining: " пенополиуретан",
     material: " морозостойкий ПВХ",
     size: " 11",
+    lgth: " 30 cм",
     safety: " Ми Мп Нм Нс Нм Нт Вн Тн К80 Щ50",
     certificate:
       "ТР ТС 019/2011, ГОСТ 12.4.252-2013, EN 388:2003-4342, EN 511:2012-221, ГОСТ Р ЕН 1149-5:2008",
