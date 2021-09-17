@@ -6,12 +6,8 @@ function Promo() {
     <div className="promo__wrapper">
       <div className="promo__wrapper-percent">
         <p className="promo__wrapper-title">
-          Снизить стоимость на
-          <br />
+          Как снизить затраты при закупках сиз рук?
         </p>
-        <strong className="promo__wrapper-sale">
-          15 - 20<span className="promo__wrapper-em">%</span>
-        </strong>
         <p className="promo__wrapper-text">С нами это возможно!</p>
       </div>
       <PriceListForm />
